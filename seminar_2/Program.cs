@@ -13,7 +13,7 @@ int result = firstDigit * 10 + thirdDigit; // 4 * 10 + 3 = 43
 Console.WriteLine($"В числе {number} => {result}");
 */
 
-/* Вторая задача семинара*/
+/* Вторая задача семинара
 // Напишите программу, которая принимает на вход трёхзначное
 // число и возводит вторую цифру этого числа в степень, равную
 // третьей цифре.
@@ -28,4 +28,22 @@ int secondDigit = initialNumber/10%10;
 int thirdDigit = initialNumber%10;
 int result = (int)Math.Pow (secondDigit, thirdDigit);
 Console.WriteLine ($"{secondDigit} ^ {thirdDigit} = {result}");
+*/
 
+/*Третья задача семинара*/
+// Напишите программу, которая выводит третью с конца
+// цифру заданного числа или сообщает, что третьей цифры нет.
+// 456 => 4
+// 7812 => 8
+// 91 => Третьей цифры нет
+
+int number = 235443;
+if(number >= 100)
+{
+    int thirdDigEnd = (number /100) %10;
+    Console.WriteLine ($"Третья цифра с конца в числе {number} равна {thirdDigEnd}");
+}
+else
+{
+    Console.WriteLine("Третьей цифры нет");
+}
