@@ -1,0 +1,15 @@
+/home/rp/CSHARP/sem_1/obj/Debug/net7.0/sem_1.csproj.AssemblyReference.cache
+/home/rp/CSHARP/sem_1/obj/Debug/net7.0/sem_1.GeneratedMSBuildEditorConfig.editorconfig
+/home/rp/CSHARP/sem_1/obj/Debug/net7.0/sem_1.AssemblyInfoInputs.cache
+/home/rp/CSHARP/sem_1/obj/Debug/net7.0/sem_1.AssemblyInfo.cs
+/home/rp/CSHARP/sem_1/obj/Debug/net7.0/sem_1.csproj.CoreCompileInputs.cache
+/home/rp/CSHARP/sem_1/bin/Debug/net7.0/sem_1
+/home/rp/CSHARP/sem_1/bin/Debug/net7.0/sem_1.deps.json
+/home/rp/CSHARP/sem_1/bin/Debug/net7.0/sem_1.runtimeconfig.json
+/home/rp/CSHARP/sem_1/bin/Debug/net7.0/sem_1.dll
+/home/rp/CSHARP/sem_1/bin/Debug/net7.0/sem_1.pdb
+/home/rp/CSHARP/sem_1/obj/Debug/net7.0/sem_1.dll
+/home/rp/CSHARP/sem_1/obj/Debug/net7.0/refint/sem_1.dll
+/home/rp/CSHARP/sem_1/obj/Debug/net7.0/sem_1.pdb
+/home/rp/CSHARP/sem_1/obj/Debug/net7.0/sem_1.genruntimeconfig.cache
+/home/rp/CSHARP/sem_1/obj/Debug/net7.0/ref/sem_1.dll
