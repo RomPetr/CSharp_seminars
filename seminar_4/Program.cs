@@ -77,7 +77,7 @@ Console.WriteLine ($"Результат: {ConvertArrayToInteger(result_arr)}");
 
 while (true)
 {
-    Console.Write("Введите текст: ");
+    Console.Write("Введите число или 'q' для выхода: ");
     string text = Console.ReadLine();
     if (text == "q") // Проверка на ввод 'q' для выхода
     {
