@@ -51,7 +51,7 @@ int[,] array = CreateMatrix (4,5);
 ShowMatrix (array);
 */
 //---------------------------------------------------------------
-/* Задача 2: */
+/* Задача 2:
 //Создать двумерный массив, состоящий из целых чисел.
 //Вывести на экран "интересные" элементы массива.
 //Назовем число интересным, если сумма его цифр четная
@@ -108,3 +108,24 @@ int GetSumOfDigits (int value)
     }
     return sum;
 }
+*/
+
+/* Задача 3: */
+//Ввести строку состоящию из букв и цифр и оставить только буквы
+
+string GetOfLettersFromString (string s)
+{
+    string letters = "";
+    foreach (char e in s)
+    {
+        if (char.IsAsciiLetter (e) == true)
+        {
+            letters = letters + e;
+        }
+    }
+    return letters;
+}
+
+string str = Console.ReadLine ();
+string result = GetOfLettersFromString (str);
+Console.WriteLine (result);
