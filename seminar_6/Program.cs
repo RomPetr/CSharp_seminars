@@ -16,6 +16,6 @@ string GetStringFromCharArray (char[] array)
 }
 
 char[] chars =  {'1', 'd', '!', '2', 'f'};
-Console.WriteLine();
+Console.WriteLine($"Массив: [{string.Join(";", chars)}]");
 string res = GetStringFromCharArray(chars);
 Console.WriteLine(res);
