@@ -45,7 +45,7 @@ Console.WriteLine($"Строчка исходная: {str}");
 char[] chars = ConvertStringToCharArray(str);
 Console.WriteLine($"Массив: [ {String.Join(";", chars)} ]");
 */
-/* Задача 3 */
+/* Задача 3 
 // Считать строку с консоли, состоящую из латинских
 // букв в нижнем регистре. Выяснить, сколько среди
 // введённых букв гласных.
@@ -78,3 +78,41 @@ string inputString = Console.ReadLine();
 inputString = inputString.ToLower(); // нижний регистр, "HI" -> "hi"
 // ToUpper() - верхний ("hi" => "HI")
 Console.WriteLine($"В строчке: {inputString} в нижн. регистре : {GetVovelsCount(inputString)} гласных");
+*/
+//---------------------------------------------------------------
+/*Домашняя работа */
+// Задача 1
+//Задайте двумерный массив символов (тип char [,]). 
+//Создать строку из символов этого массива.
+
+string GetStringFromCharMatrix(char[,] matrix)
+{
+    string result = string.Empty; //""
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            result = result + matrix[i, j];
+        }
+    }
+    return result;
+}
+
+void PrintCharMatrix(char[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            Console.Write($"{matrix[i, j]}\t");
+        }
+        Console.WriteLine();
+    }
+}
+
+char[,] ch_matrix = { { 'a', 'b', 'c' }, { 'd', 'e', 'f' } };
+Console.WriteLine("Исходный массив символов:");
+PrintCharMatrix (ch_matrix);
+string res = GetStringFromCharMatrix(ch_matrix);
+Console.WriteLine ("Получившаяся строка:");
+Console.WriteLine(res);
