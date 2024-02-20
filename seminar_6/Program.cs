@@ -118,7 +118,7 @@ Console.WriteLine ("Получившаяся строка:");
 Console.WriteLine(res);
 */
 //---------------------------------------------------------------
-/* Задача 2 */
+/* Задача 2
 //Задайте строку, содержащую латинские буквы в обоих регистрах. 
 //Сформируйте строку, в которой все заглавные буквы заменены на строчные.
 
@@ -127,4 +127,30 @@ string inputString = Console.ReadLine();
 inputString = inputString.ToLower(); // нижний регистр, "HI" -> "hi"
 Console.Write ($"После преобразования: {inputString}");
 Console.WriteLine;
+*/
+//---------------------------------------------------------------
+/* Задача 3 */
+//Задайте произвольную строку. Выясните, является ли она палиндромом.
+//Пример:
+// "шалаш" => полиндром
 
+bool CheckStringPalindrome (string str)
+{
+    for(int i = 0, j = str.Length-1; i < str.Length/2; i++, j--)
+    {
+        if (str[i] != str[j]) return false;
+    }
+    return true;
+}
+
+Console.Write("Введите строчку: ");
+string inputString = Console.ReadLine();
+inputString = inputString.ToLower(); // нижний регистр, "HI" -> "hi"
+if (CheckStringPalindrome(inputString))
+{
+    Console.WriteLine("Это слово палиндром");
+}
+else
+{
+    Console.WriteLine("Это слово не палиндром");
+}
