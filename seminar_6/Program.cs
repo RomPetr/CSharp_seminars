@@ -80,7 +80,7 @@ inputString = inputString.ToLower(); // нижний регистр, "HI" -> "hi
 Console.WriteLine($"В строчке: {inputString} в нижн. регистре : {GetVovelsCount(inputString)} гласных");
 */
 //---------------------------------------------------------------
-/*Домашняя работа */
+/*Домашняя работа
 // Задача 1
 //Задайте двумерный массив символов (тип char [,]). 
 //Создать строку из символов этого массива.
@@ -116,3 +116,15 @@ PrintCharMatrix (ch_matrix);
 string res = GetStringFromCharMatrix(ch_matrix);
 Console.WriteLine ("Получившаяся строка:");
 Console.WriteLine(res);
+*/
+//---------------------------------------------------------------
+/* Задача 2 */
+//Задайте строку, содержащую латинские буквы в обоих регистрах. 
+//Сформируйте строку, в которой все заглавные буквы заменены на строчные.
+
+Console.Write("Введите строчку: ");
+string inputString = Console.ReadLine();
+inputString = inputString.ToLower(); // нижний регистр, "HI" -> "hi"
+Console.Write ($"После преобразования: {inputString}");
+Console.WriteLine;
+
