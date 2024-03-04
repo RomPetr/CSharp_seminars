@@ -1,2 +1,23 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/* Задача 1 
+//Написать рекурсивную функцию вычисления факториала числа N
+
+int FactRecurs(int n)
+{
+    if (n == 1 || n == 0)
+        return 1;
+    return n * FactRecurs(n - 1);
+}
+
+Console.Write ("Введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+Console.Write ("\nФакториал данного числа равен: ");
+Console.WriteLine (FactRecurs(N));
+*/
+//---------------------------------------------------------------
+/* Задача 2 */
+// Напишите программу, которая будет принимать 
+// на вход число и  возвращать сумму его цифр.
+// Пример
+// 123 => 6 (1+2+3 = 6)
+// 63 => 9
+
