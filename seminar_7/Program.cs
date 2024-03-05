@@ -78,7 +78,7 @@ ShowNumbers(start, end);
 Console.WriteLine();
 */
 //---------------------------------------------------------------
-// Задача 2
+/* Задача 2
 // Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
 int AkkermansFunction(int n, int m)
 {
@@ -102,3 +102,51 @@ Console.Write ("Введите конечное значение функции 
 int end = Convert.ToInt32(Console.ReadLine());
 int AkkermanResult = AkkermansFunction(start, end);
 Console.WriteLine(AkkermanResult);
+*/
+//---------------------------------------------------------------
+/* Задача 3 */
+//Задайте произвольный массив. Выведете его элементы, начиная с конца. Использовать рекурсию, не использовать циклы.
+
+int[] CreateArray(int items)
+{
+    int[] arr = new int[items];
+    Random rnd = new Random();
+    for (int i = 0; i < items; i++)
+    {
+        arr[i] = rnd.Next(101);
+    }
+    return arr;
+}
+
+void PrintArray(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write(arr[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+void PrintReverseArray(int[] arr, int j)
+{
+    if (j == 0) 
+    {
+        Console.Write(arr[j]);
+        return;
+    }
+    Console.Write(arr[j] + " ");
+    PrintReverseArray(arr, j - 1);
+}
+
+//int[] array = {1, 2, 3, 4, 5, 6};
+
+Console.Write ("Введите размер массива: ");
+int size = Convert.ToInt32(Console.ReadLine());
+int[] Array = CreateArray(size);
+int lastIndex = Array.Length - 1;
+Console.WriteLine("Полученный массив: ");
+PrintArray(Array);
+Console.WriteLine("\nПеревернутый массив: ");
+PrintReverseArray(Array, lastIndex);
+Console.WriteLine();
+
