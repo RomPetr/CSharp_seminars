@@ -33,7 +33,7 @@ Console.Write ("Сумма цифр этого числа равна: ");
 Console.WriteLine (SumOfDigits(number));
 */
 //---------------------------------------------------------------
-/* Задача 3 */
+/* Задача 3 
 // Задайте значение N. Напишите программу, которая выведет
 // все натуральные числа в промежутке от 1 до N.
 // Указание
@@ -51,10 +51,28 @@ void ShowNumbers(int start, int end)
     Console.Write(start + " ");
     ShowNumbers (start+1, end);
 }
+ShowNumbers(1, 5); // start = 1, end = 5
+*/
+//---------------------------------------------------------------
+/*Домашняя работа*/
+// Задача 1
+// Задайте значения M и N. Напишите программу, которая выведет все натуральные числа
+// в промежутке от M до N. Использовать рекурсию, не использовать циклы.
+
+void ShowNumbers(int start, int end)
+{
+    if (start == end)
+    {
+        Console.Write(start);
+        return;
+    }
+    Console.Write(start + " ");
+    ShowNumbers (start+1, end);
+}
+
 Console.Write ("Введите начальное значение: ");
 int start = Convert.ToInt32(Console.ReadLine());
 Console.Write ("Введите конечное значение: ");
 int end = Convert.ToInt32(Console.ReadLine());
-
 ShowNumbers(start, end);
 Console.WriteLine();
