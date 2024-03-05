@@ -20,4 +20,14 @@ Console.WriteLine (FactRecurs(N));
 // Пример
 // 123 => 6 (1+2+3 = 6)
 // 63 => 9
-
+int SumOfDigits (int number)
+{
+    // Базовый случай
+    if (number == 0) return 0; // 3 + 6 + 0 = 9
+    int result = number % 10 + SumOfDigits(number / 10);
+    return result;
+}
+Console.Write ("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+Console.Write ("Сумма цифр этого числа равна: ");
+Console.WriteLine (SumOfDigits(number));
