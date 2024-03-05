@@ -54,7 +54,7 @@ void ShowNumbers(int start, int end)
 ShowNumbers(1, 5); // start = 1, end = 5
 */
 //---------------------------------------------------------------
-/*Домашняя работа*/
+/*Домашняя работа
 // Задача 1
 // Задайте значения M и N. Напишите программу, которая выведет все натуральные числа
 // в промежутке от M до N. Использовать рекурсию, не использовать циклы.
@@ -76,3 +76,29 @@ Console.Write ("Введите конечное значение: ");
 int end = Convert.ToInt32(Console.ReadLine());
 ShowNumbers(start, end);
 Console.WriteLine();
+*/
+//---------------------------------------------------------------
+// Задача 2
+// Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
+int AkkermansFunction(int n, int m)
+{
+    if (n == 0)
+    {
+        return m + 1;
+    }
+    else if (m == 0)
+    {
+        return AkkermansFunction(n - 1, 1);
+    }
+    else
+    {
+        return AkkermansFunction(n - 1, AkkermansFunction(n, m - 1));
+    }
+}
+
+Console.Write ("Введите начальное значение функции Аккермана: ");
+int start = Convert.ToInt32(Console.ReadLine());
+Console.Write ("Введите конечное значение функции Аккермана: ");
+int end = Convert.ToInt32(Console.ReadLine());
+int AkkermanResult = AkkermansFunction(start, end);
+Console.WriteLine(AkkermanResult);
