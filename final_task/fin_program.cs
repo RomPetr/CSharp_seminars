@@ -45,14 +45,31 @@ void CopyToNewArray(string[] inputArray, string[] newArray)
 }
 
 Console.Write("Введите количество элементов массива\t");
-int N = Convert.ToInt32(Console.ReadLine());
+int N = Convert.ToInt32(Console.ReadLine()); //вводим количество элементов массива
 string[] inputArray = new string[N];
-createArray(inputArray);
+createArray(inputArray); // вводим массив с клавиатуры
 
-Console.WriteLine("Исходный массив:");
+//выводим исходный массив на печать
+Console.WriteLine("\nИсходный массив:");
 
 for (int i = 0; i < inputArray.Length; i++)
 {
     Console.Write(inputArray[i]);
     Console.Write("\t");
 }
+
+//создаем новый массив соответствующего размера
+string[] newArray = new string[CountArray(inputArray)];
+
+CopyToNewArray(inputArray, newArray); //копируем исходный массив в новый
+
+Console.WriteLine("\n");
+
+//выводим новый массив на печать
+Console.WriteLine("Полученный массив:");
+for (int i = 0; i < newArray.Length; i++)
+{
+    Console.Write(newArray[i]);
+    Console.Write(" ");
+}
+Console.WriteLine();
