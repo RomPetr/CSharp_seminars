@@ -5,3 +5,18 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
+void createArray (string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"Введите элемент под индексом {i}:\t ");
+        array[i] = string(Console.Read());     
+    }
+    
+}
+
+
+Console.Write("Введите количество элементов массива\t");
+int N = Convert.ToInt32(Console.ReadLine());
+string[] inputArray = new string[N];
+createArray(inputArray);
