@@ -9,3 +9,4 @@
 ## Решение
 
 1. Репозиторий на Github был создан ранее в процессе обучения на данном курсе. Репозиторий находится по адресу: <https://github.com/RomPetr/CSharp_seminars>
+2. Блок-схема алгоритма создана и выгружена в репозиторий по адресу: <https://github.com/RomPetr/CSharp_seminars/tree/main/final_task>  Файл: **FianalTaskDiag.pdf**
