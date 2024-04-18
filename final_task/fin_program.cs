@@ -30,6 +30,20 @@ int CountArray(string[] arr)
     return newSize;
 }
 
+// копирование строк с длиной меньше или равно 3 символа в новый массив
+void CopyToNewArray(string[] inputArray, string[] newArray)
+{
+    int index = 0;
+    for (int i = 0; i < inputArray.Length; i++)
+    {
+        if (inputArray[i].Length <= 3)
+        {
+            newArray[index] = inputArray[i];
+            index++;
+        }
+    }
+}
+
 Console.Write("Введите количество элементов массива\t");
 int N = Convert.ToInt32(Console.ReadLine());
 string[] inputArray = new string[N];
